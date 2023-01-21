@@ -3,7 +3,7 @@ const dbconnect = require("./config/db.connect");
 const cors = require("cors");
 const userRouter = require('./users/user.router')
 
-let port = 8080;
+let port = process.env.PORT || 8080;
 
 
 const app = express();
